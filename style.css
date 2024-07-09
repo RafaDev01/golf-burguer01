@@ -73,13 +73,15 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    padding: 0 12px;
     max-width: 100%;
-    overflow: hidden;
+    overflow: hidden;	
+    padding: 12px;
 }
 
-main {
-    overflow: hidden;
+.whatsapp-fixo{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
 }
 
 .logo {
@@ -93,6 +95,22 @@ main {
     height: 160px;
 }
 
+.title{
+    display: flex;
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 28px;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.title > h1{
+    color: #ACFF31;
+    text-shadow: 5px 5px 8px #adff31b3;
+}
+
 h2 {
     color: #ACFF31;
     font-family: "Poetsen One", sans-serif;
@@ -102,12 +120,22 @@ h2 {
     margin: 8px 0;
 }
 
+p{	
+    line-height: 2em;
+}
+
 .content-text {
     margin-bottom: 24px;
 }
 
 main {
     max-width: 100%;
+    position: relative;
+}
+
+.img{
+    margin-bottom: 24px;  
+    border-radius: 4px;   
 }
 
 .carrosel-lanches {
@@ -121,8 +149,8 @@ main {
 }
 
 .carrosel-lanches img {
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     transition: opacity 0.5s ease; 
 }
 
@@ -164,35 +192,80 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body{
-        background-color: rgb(0, 0, 0);
-    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body{
-        background-color: rgb(153, 98, 98);
+    .title{
+        font-size: 32px;
+    }
+
+    .carrosel-lanches img {
+        height: 600px;
+        width: 600px;
+    }
+
+    .container{
+    	padding: 0 24px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body{
-        background-color: rgb(0, 68, 255);
-    }
+    .container{
+    	padding: 0 36px;
+    }	
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body{
-        background-color: rgb(123, 255, 0);
+    .title{
+        font-size: 38px;
+    }
+
+    .carrosel-lanches img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .container{
+    	padding: 0 42px;
+    }	
+
+    .container-box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+	    margin: 64px 0;
+    }
+
+    .container-2{
+    	flex-direction: row-reverse;
+    }
+
+    .content-box{
+	max-width: 400px;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body{
-        background-color: rgb(68, 0, 255);
+    .container{
+    	padding: 0 84px;
+    }	
+ 
+    .container{
+	justify-content: space-around;
+    }
+
+    .carrosel-lanches img {
+        height: 500px;
+        width: 500px;
+    }
+
+    .carrosel-lanches img {
+        height: 500px;
+        width: 500px;
     }
 }

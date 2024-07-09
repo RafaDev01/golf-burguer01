@@ -5,7 +5,7 @@ let aux = 0
 function changeImage(){
     aux++
     img.src = `assets/img/burguer${aux}.webp`
-    if(aux == 4){
+    if(aux == 5){
         aux = 0
     }
 }
